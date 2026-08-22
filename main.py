@@ -64,7 +64,7 @@ if user_input := st.chat_input("Ask Lee Kuan Yew a question..."):
                     model="openai/gpt-oss-120b",
                     messages=messages_payload,
                     temperature=0.4,
-                    max_tokens=800
+                    max_tokens=1500
                 )
                 
                 reply = response.choices[0].message.content.strip()
